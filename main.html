@@ -10,15 +10,141 @@
   <meta name="description" content="Lets practice here">
   <title>Document</title>
   <link rel="stylesheet" href="Style.css">
-</head> 
+</head>
 
 <body>
 
-  <section>
-    <div class="box box_one">This is box one</div>
-    <div class="box box_two">This is box two</div>
-    <div class="box box_three">This is box three</div>
-    <div class="box box_four">Box four</div>
+  <section class="section" id="s-1">
+    <div id="c-1" class="container line">
+      <div id="col-1" class="col col-one size-100 line">
+        <h2>Sign Up for newsletters</h2>
+      </div>
+
+      <div id="col-2" class="col col-two size-100 line">
+        <form action="" name="Newsletter" target="_blank" method="get" autocomplete="on" class="line">
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="daily bits" name="daily bits" id="daily_bits" checked>
+            </div>
+            <div class="checkbox_label line">
+              <label for="daily_bits">Daily bits</label>
+              <span class="sub_label">Todays biggest news</span>
+            </div>
+          </div>
+
+
+
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="the exchange" name="the exchange" id="exchange">
+            </div>
+            <div class="checkbox_label line">
+              <label for="exchange">The exchange</label>
+              <span class="sub_label">Art, money and markets</span>
+            </div>
+          </div>
+
+
+
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="sponsorship" name="sponsorship" id="sponsorship">
+            </div>
+            <div class="checkbox_label line">
+              <label for="sponsorship">Sponsorship</label>
+              <span class="sub_label">Partnership insights</span>
+            </div>
+          </div>
+
+
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="week in review" name="week in review" id="week">
+            </div>
+            <div class="checkbox_label line">
+              <label for="week">Week in review</label>
+              <span class="sub_label">The weeks biggest news</span>
+            </div>
+          </div>
+
+
+
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="this week" name="this week" id="week-in-arts">
+            </div>
+            <div class="checkbox_label line">
+              <label for="week-in-arts">This week in art</label>
+              <span class="sub_label">Announcements and discounts</span>
+            </div>
+          </div>
+
+
+          <div class="checkbox_wrapper line">
+            <div class="checkbox line">
+              <input type="checkbox" value="event updates" name="events" id="event">
+            </div>
+            <div class="checkbox_label line">
+              <label for="event">Event updates</label>
+              <span class="sub_label">Art news of the week</span>
+            </div>
+          </div>
+
+
+          <div class="email_wrapper size-50">
+            <input type="email" placeholder="Enter your email address" required>
+          </div>
+          <button type="submit" value="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="s-2" class="section_two">
+    <div class="container" id="c-2">
+
+      <div id="col-3" class="col size-50">
+        <div class="pricing-table-title">
+          <h2>Basic</h2>
+        </div>
+        <div class="pricing-table-price">
+          <span class="title">Free</span> 3000 monthly visitors
+        </div>
+        <div class="pricing-table-feature">
+          <ul>
+            <li>Limited reports</li>
+            <li>Unlimited reports</li>
+            <li>Data storage for 1 year</li>
+          </ul>
+        </div>
+        <div class="pricing-table-button">
+          <button type="button">Start now</button>
+        </div>
+      </div>
+
+
+      <div id="col-4" class="col size-50">
+        <div class="pricing-table-title">
+          <h2>Pro</h2>
+        </div>
+        <div class="pricing-table-price">
+          <span class="title">$19/month</span> 10000 monthly visitors
+        </div>
+        <div class="pricing-table-feature">
+          <ul>
+            <li>Unlimited reports</li>
+            <li>15 days free trial</li>
+            <li>Data storage for 1 year</li>
+          </ul>
+        </div>
+        <div class="pricing-table-button">
+          <button type="button">Try it</button>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 
