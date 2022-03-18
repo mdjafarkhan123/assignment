@@ -6,7 +6,6 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  margin: 0;
 }
 
 h1,
@@ -57,6 +56,9 @@ section {
 .size-50 {
   width: 50%;
 }
+.size-48 {
+  width: 48%;
+}
 
 .size-25 {
   width: 25%;
@@ -64,6 +66,18 @@ section {
 
 .size-30 {
   width: 30%;
+}
+
+.size-40 {
+  width: 40%;
+}
+
+.size-20 {
+  width: 20%;
+}
+
+.size-45 {
+  width: 45%;
 }
 
 .size-23 {
@@ -79,7 +93,7 @@ a {
 }
 
 line {
-  border: 1px solid rgba(112, 198, 255, 0.363);
+  border: 1px solid rgba(112, 198, 255, 0.795);
 }
 
 /*!------------ Assignment-1 starts here ---------------*/
@@ -505,3 +519,125 @@ section#s-4 {
 }
 
 /*!-------- Assignment-05 starts here ----------*/
+
+section#s-5 .container {
+  width: 1000px;
+  min-height: 600px;
+  margin: auto;
+}
+
+section#s-5 h3 {
+  font-size: 17px;
+  color: #008000;
+}
+
+section#s-5 p {
+  font-size: 15px;
+}
+
+#s-5 i.fa {
+  color: green;
+  font-size: 30px;
+}
+
+#s-5 .container .timeline_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#s-5 .container .timeline_wrapper .timeline_content_one,
+#s-5 .container .timeline_wrapper .timeline_content_two {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 35px 0;
+  box-sizing: border-box;
+  column-gap: 30px;
+}
+
+
+#s-5 .timeline_line {
+  position: relative;
+  width: 80px;
+  display: grid;
+  place-items: center;
+}
+#s-5 .timeline_line img {
+  width: 20px;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 4;
+}
+#s-5 .timeline_line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: green;
+  left: 50%;
+}
+
+#s-5 .timeline_icon {
+  position: relative;
+  z-index: 2;
+  background-color: var(--assignment5);
+}
+
+#s-5 .timeline_icon img {
+  padding: 5px;
+  border: 2px solid green;
+  border-radius: 50%;
+  z-index: 3;
+  background-color: var(--assignment5);
+}
+
+
+/**-----For left side content --------*/
+
+#s-5 .container .wrapper_left .timeline_content_one {
+  border-radius: 0 80px 80px 0;
+  background-color: var(--assignment5);
+}
+
+#s-5 .wrapper_left .timeline_icon::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 30px;
+  height: 2px;
+  width: 70px;
+  background-color: green;
+  z-index: -1;
+}
+
+
+/**-----For right side content --------*/
+
+#s-5 .container .wrapper_right .timeline_content_one {
+  justify-content: flex-end;
+}
+
+#s-5 .container .wrapper_right .timeline_content_two {
+    border-radius: 80px 0px 0px 80px;
+    background-color: var(--assignment5);
+}
+
+#s-5 .container .wrapper_right .timeline_content_two .timeline_text {
+  order: 2;
+}
+
+#s-5 .container .wrapper_right .timeline_content_two .timeline_icon {
+  order: 1;
+}
+
+#s-5 .wrapper_right .timeline_icon::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 30px;
+  height: 2px;
+  width: 70px;
+  background-color: green;
+  z-index: -2;
+}
